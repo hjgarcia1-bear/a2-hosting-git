@@ -1,8 +1,13 @@
 The following relates to [A2 Hosting](http://www.a2hosting.com) but it should be a similar process for any server. Public websites should be placed in the **public_html** folder in your home directory. Your home directory path is **/home/username** where username is your A2 Hosting username.
 
-#Server
+#Connect to your account via SSH
 
-Login via SSH and create two folders. One folder is for your website files and the other folder is for the Git version control.
+Remotely log in via SSH in your Terminal (or other command-line interface) using your A2 **username** and the **domain** associated with your account. Notice that **x** should be replaced by the default port for A2 Hosting.
+
+```
+ssh -p x username@domain.com
+```
+At the prompt, enter your SSH password. You should now be logged in to your A2 Hosting account.
 
 ##Version control and website folders
 
